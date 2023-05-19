@@ -58,7 +58,7 @@ body {
 }
 /* Home */
 .home {
-  background: url("https://raw.githubusercontent.com/LochanJangid/photography/main/img/bg.jpg") no-repeat;
+  background: url("../img/bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   width: 100vw;
