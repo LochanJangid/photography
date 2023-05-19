@@ -48,7 +48,7 @@ body {
 }
 /* Home */
 .home {
-  background: url("/assets/img/bg.jpg") no-repeat;
+  background: url("/img/bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   width: 100vw;
@@ -474,4 +474,80 @@ body {
 .footer h1{
   font-size: smaller;
   font-weight: 100;
+}
+@media screen and (max-width: 768px) {
+  .navbar .nav {
+    flex-direction: column;
+    justify-content: center;
+    width: 20vw;
+    height: 20vh;
+    align-items: center;
+    background: black;
+    position: absolute;
+    left: -800px;
+    transition: 0.5s;
+  }
+  .navbar .logo {
+    z-index: 999999;
+  }
+  .navbar .burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    z-index: 99999;
+  }
+
+  .navbar .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+  }
+  .navbar .nav.show {
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .home h1{
+    font-size: 2em;
+  }
+  .home h2{
+    font-size: 1em;
+  }
+  .home p{
+    font-size: 1em;
+  }
+  .about{
+    flex-direction: column;
+  }
+  .about img{
+    width: 100%;
+  }
+  .gallery .image img{
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 425px){
+    .navbar .logo h1{
+        display: none;
+    }
+    .home p{
+        width: 90vw;
+    }
+    .gallery .image img{
+        width: 40vw;
+      }
+      .testimonial-section .text{
+        font-size: 1em;    
+        width: 90vw;
+        margin-bottom: 5px;
+
+      }
+      .testimonial-section .name{
+        font-size: 1em;
+      }
 }
