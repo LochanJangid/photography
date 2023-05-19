@@ -9,6 +9,14 @@ body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+:root {
+  /* //....... Color ........// */
+  --primary-color: #ff3c78;
+  --light-black: rgba(0, 0, 0, 0.89);
+  --black: #000;
+  --white: #fff;
+  --grey: #aaa;
+}
 /* Navbar */
 .navbar {
   position: fixed;
@@ -291,20 +299,6 @@ body {
     box-shadow: 0 24px 24px rgba(187, 187, 187, 0.75);
   }
   
-  .arrow-right,
-  .arrow-left {
-    position: relative;
-    display: inline-block;
-  height: 9px;
-  width: 43px;
-  background-image: url(http://t.commonsupport.com/adro/images/icons/arrow-left-2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.arrow-right {
-  background-image: url(http://t.commonsupport.com/adro/images/icons/arrow-right-2.png);
-}
 @media only screen and (max-width: 767px) {
     .testimonial-section .sec-title {
       margin-bottom: 50px;
@@ -343,14 +337,7 @@ body {
   margin: 0 auto;
 }
 
-:root {
-  /* //....... Color ........// */
-  --primary-color: #ff3c78;
-  --light-black: rgba(0, 0, 0, 0.89);
-  --black: #000;
-  --white: #fff;
-  --grey: #aaa;
-}
+
 
 .contact {
   margin-top: 45px;
